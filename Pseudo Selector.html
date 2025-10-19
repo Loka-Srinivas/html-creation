@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div span {
+  color: red;
+}
+
+ul > li {
+  background-color: lightblue;
+}
+
+h2 + p {
+  color: blue;
+  font-style: italic;
+}
+
+h1 ~ p {
+  color: green;
+}
+
+ol li:first-child {
+  font-weight: bold;
+}
+ol li:last-child {
+  font-style: italic;
+}
+
+button {
+  background-color: lightgray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+input:focus {
+  border: 2px solid blue;
+  background-color: #e6f0ff; /* light blue background */
+  outline: none;
+}
+
+p::first-letter {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2::before {
+  content: "👋 "; /* Emoji before the heading text */
+}
+</style>
+</head>
+<body>
+
+p::selection {
+  background-color: yellow;
+  color: red;
+}    
+
+</style>
+</head>
+<body>
+    <div>
+  <p>This is paragraph one.</p>
+  <p>This is paragraph two with a <span>red text inside span</span>.</p>
+  <p>This is paragraph three.</p>
+</div>
+
+<p>This is a span outside div <span>not red</span>.</p>
+
+<ul>
+  <li>Parent Item 1</li>
+  <li>Parent Item 2
+    <ul>
+      <li>Nested Item 1</li>
+      <li>Nested Item 2</li>
+    </ul>
+  </li>
+  <li>Parent Item 3</li>
+</ul>
+
+<h2>Heading 1</h2>
+<p>This paragraph comes right after h2.</p>
+
+<h2>Heading 2</h2>
+<p>This is the second paragraph after h2.</p>
+
+<h2>Heading 3</h2>
+<p>This is the third paragraph after h2.</p>
+
+<p>This paragraph is not immediately after h2, so no style applied.</p>
+
+<h1>Main Heading</h1>
+<p>Paragraph one after h1.</p>
+<p>Paragraph two after h1.</p>
+<p>Paragraph three after h1.</p>
+
+<ol>
+  <li>Item One</li>
+  <li>Item Two</li>
+  <li>Item Three</li>
+  <li>Item Four</li>
+  <li>Item Five</li>
+</ol>
+
+<button>Button 1</button>
+<button>Button 2</button>
+<button>Button 3</button>
+
+<form>
+  <label>Name:</label>
+  <input type="text" name="name"><br>
+  
+  <label>Email:</label>
+  <input type="email" name="email"><br>
+  
+  <label>Password:</label>
+  <input type="password" name="password"><br>
+  
+  <button type="submit">Submit</button>
+</form>
+
+<p>
+  Learning web development is an exciting journey. It helps you understand how websites work and how to build your own. 
+  With HTML, CSS, and JavaScript, you can create interactive and beautiful websites. Keep practicing and exploring new ideas every day!
+</p>
+
+<h2>Welcome</h2>
+
+<p>
+  Web design is both creative and technical. It allows developers to build beautiful interfaces while ensuring smooth user experiences. 
+  Learning CSS helps bring visual life to any website you create!
+</p>
+
+</body>
+</html>
